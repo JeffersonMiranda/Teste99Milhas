@@ -64,32 +64,32 @@ export default {};
 <style scoped>
 #AppFooterContainer {
   width: 100%;
-  height: 220px;
+  min-height: 220px;
   padding: 20px 0;
   background-color: #d2d2d2;
   color: #7f7f7f;
 }
 
-#LogoBox{
+#LogoBox {
   display: flex;
   align-items: center;
-  padding:15px 0;
+  padding: 15px 0;
 }
 
-#LogoBox img{
-  margin:0;
+#LogoBox img {
+  margin: 0;
   padding: 0 10px;
 }
 
-#LogoBox hr{
+#LogoBox hr {
   width: 100%;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   border: 2px solid #cd6701;
 }
 
-#LogoBox hr:nth-child(1){
-   width:130px;
+#LogoBox hr:nth-child(1) {
+  width: 130px;
 }
 
 ul {
@@ -135,8 +135,31 @@ ul li a {
   margin: 0;
 }
 
-#CertificadosContainer ul li{
-  padding: 0 0 5px 0; 
+#CertificadosContainer ul li {
+  padding: 0 0 5px 0;
 }
 
+@media (max-width: 640px) {
+  #LogoBox {
+    justify-content: center;
+  }
+  #FooterBoxes {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 90px;
+    text-align: center;
+  }
+  
+  #LogoBox hr {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    border: 2px solid #cd6701;
+  }
+
+  #LogoBox hr:nth-child(1) {
+    width: 50%;
+  }
+}
 </style>

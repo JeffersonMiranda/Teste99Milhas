@@ -1,7 +1,7 @@
 <template>
   <div id="EmailNovidadesContainer">
 
-      <h2> Informe seu e-mail e receba novidades </h2>
+    <h2> Informe seu e-mail e receba novidades </h2>
 
     <form>
       <input class="form-control" type="text" placeholder="Nome" />
@@ -21,12 +21,13 @@ export default {};
 <style scoped>
 #EmailNovidadesContainer {
   width: 100%;
-  height: 200px;
+  min-height: 200px;
   background-color: #002b5b;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
+  flex-wrap: wrap;
 }
 
 h2 {
@@ -38,6 +39,7 @@ form {
   margin-top: 25px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 form input {
@@ -52,7 +54,22 @@ form button {
   width: 160px;
   height: 30px;
   background-color: #cd6701;
-  color:white;
+  color: white;
   border-radius: 7px;
+}
+
+@media (max-width: 640px) {
+  h2 {
+    font-size: 18px;
+  }
+  form {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  form input {
+    width: 80%;
+    margin: 4px;
+  }
 }
 </style>

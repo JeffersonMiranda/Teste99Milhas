@@ -1,6 +1,6 @@
 <template>
   <div id="LoginContainer">    
-     
+
         <span>Acesse a plataforma</span> 
  
         <input class="form-control" type="text" placeholder="Login" />
@@ -21,11 +21,15 @@ export default {};
   margin: 0;
   padding: 0 120px 0 0;
   background-color: #002b5b;
-  height: 50px;
+  min-height: 50px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+#LoginContainer * {
+  margin: 3px;
 }
 
 span {
@@ -46,5 +50,14 @@ button {
   background-color: #cd6701;
   color: white;
   border-radius: 7px;
+}
+
+@media (max-width: 640px) {
+  #LoginContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
 }
 </style>

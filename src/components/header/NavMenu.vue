@@ -1,18 +1,18 @@
 <template>
-  <div id="NavMenuContainer">
-      
-    <img id="logo" width="181" height="43" src="@/assets/MibuscaLogo.png"/>
-
+  <div id="NavMenuContainer"> 
+   
+    <img id="logo" class="img-fluid" src="@/assets/MibuscaLogo.png"/>
+   
     <nav>
-      <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Inicio</a>
+      <ul>
+          <li>
+            <a href="#">Inicio</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Quem somos</a>
+          <li>
+            <a href="#">Quem somos</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Cadastre-se</a>
+          <li>
+            <a href="#">Cadastre-se</a>
           </li>
       </ul>   
     </nav>
@@ -29,21 +29,25 @@ export default {
 
 <style scoped>
 #NavMenuContainer {
-  width: 100%;
-  height: 70px;
+  padding: 0 120px;
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#NavMenuContainer nav {
-  display: flex;
-  justify-content: flex-center;
-  margin-right: 110px;
+nav {
+  width: 350px;
 }
 
-img {
-  margin-left: 110px;
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
 ul li a {
@@ -53,5 +57,20 @@ ul li a {
 ul li a:hover {
   font-weight: bolder;
   text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  #NavMenuContainer {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+  nav {
+    width: 100%;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 </style>

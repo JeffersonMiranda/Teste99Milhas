@@ -5,7 +5,7 @@
     
       <div id="depoimentosBoxes">
              
-        <div v-for="depoimento in depoimentos" class="depoimentosBox">
+        <div v-for="depoimento in depoimentos" class="depoimento">
             <img :src="depoimento.imagem" alt="">
             <h6>{{ depoimento.pessoa }}</h6>
             <span>{{ depoimento.cidade }}</span>
@@ -57,10 +57,10 @@ export default {
 <style scoped>
 #DepoimentosContainer {
   width: 100%;
-  height: 500px;
+  min-height: 500px;
   background-color: #ffffff;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -73,34 +73,50 @@ h4 {
 }
 
 #depoimentosBoxes {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.depoimentosBox {
+.depoimento {
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: 400px;
+  width: 400px;
   padding: 0 15px;
 }
 
-.depoimentosBox h6 {
+.depoimento h6 {
   color: #012c5b;
   font-weight: bold;
   padding-top: 10px;
 }
 
-.depoimentosBox span {
+.depoimento span {
   color: #cd6702;
   font-weight: bold;
   font-size: 12px;
 }
 
-.depoimentosBox p {
+.depoimento p {
   text-align: center;
   color: #606060;
 }
 
+@media (max-width: 640px) {
+  #depoimentosBoxes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
+  .depoimento {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+  }
+}
 </style>

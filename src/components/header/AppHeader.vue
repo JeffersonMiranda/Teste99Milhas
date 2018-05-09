@@ -21,7 +21,6 @@ export default {
 
 <style scoped>
 #AppHeaderContainer {
-  margin: 0;
-  padding: 0;
+
 }
 </style>

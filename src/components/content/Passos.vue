@@ -46,15 +46,15 @@ export default {
 };
 </script>
 
-
 <style lang="scss" scoped>
 #passosContainer {
   width: 100%;
+  height: auto;
   padding: 40px 120px;
   background-color: #dadada;
   display: flex;
   justify-content: center;
-  flex-flow: column;
+  flex-direction: column;
 }
 
 h4 {
@@ -111,5 +111,28 @@ h4:before {
 
 .passosBox .passosTextoContainer p {
   color: #585858;
+}
+
+@media (max-width: 640px) {
+  .passosBox {
+    flex-direction: column;
+    align-items: center;
+  }
+  .passosBox .passosTextoContainer {
+    align-items: center;
+    text-align: center;
+  }
+  
+#passosContainer .passosBox:nth-child(3) {
+  flex-flow: column;
+  align-self: center;
+  text-align: center;
+  .passosTextoContainer {
+    padding-right: 15px;
+    h6 {
+      text-align: center;
+    }
+  }
+}
 }
 </style>
