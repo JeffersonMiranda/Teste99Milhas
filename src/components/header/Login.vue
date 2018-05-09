@@ -22,7 +22,6 @@ export default {};
   padding: 0 120px 0 0;
   background-color: #002b5b;
   min-height: 50px;
-  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;

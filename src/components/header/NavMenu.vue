@@ -63,7 +63,7 @@ ul li a:hover {
   #NavMenuContainer {
     flex-direction: column;
     justify-content: center;
-    padding: 0;
+    padding: 10px 0;
   }
   nav {
     width: 100%;

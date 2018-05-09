@@ -56,8 +56,7 @@ export default {
 
 <style scoped>
 #DepoimentosContainer {
-  width: 100%;
-  min-height: 500px;
+  padding: 30px 0;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;

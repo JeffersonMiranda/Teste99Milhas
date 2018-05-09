@@ -63,8 +63,6 @@ export default {};
 
 <style scoped>
 #AppFooterContainer {
-  width: 100%;
-  min-height: 220px;
   padding: 20px 0;
   background-color: #d2d2d2;
   color: #7f7f7f;
@@ -160,6 +158,11 @@ ul li a {
 
   #LogoBox hr:nth-child(1) {
     width: 50%;
+  }
+  
+  ul li{
+    justify-content: center;
+    align-items: center;
   }
 }
 </style>

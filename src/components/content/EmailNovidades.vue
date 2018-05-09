@@ -20,8 +20,7 @@ export default {};
 
 <style scoped>
 #EmailNovidadesContainer {
-  width: 100%;
-  min-height: 200px;
+  padding: 30px 0;
   background-color: #002b5b;
   display: flex;
   align-items: center;

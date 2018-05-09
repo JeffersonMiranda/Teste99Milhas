@@ -48,8 +48,6 @@ export default {
 
 <style lang="scss" scoped>
 #passosContainer {
-  width: 100%;
-  height: auto;
   padding: 40px 120px;
   background-color: #dadada;
   display: flex;
@@ -114,25 +112,29 @@ h4:before {
 }
 
 @media (max-width: 640px) {
+  #passosContainer {
+    padding: 10px 10px;
+  }
+
   .passosBox {
     flex-direction: column;
     align-items: center;
   }
   .passosBox .passosTextoContainer {
     align-items: center;
-    text-align: center;
+    text-align: justify;
   }
-  
-#passosContainer .passosBox:nth-child(3) {
-  flex-flow: column;
-  align-self: center;
-  text-align: center;
-  .passosTextoContainer {
-    padding-right: 15px;
-    h6 {
-      text-align: center;
+
+  #passosContainer .passosBox:nth-child(3) {
+    flex-flow: column;
+    align-self: center;
+    text-align: center;
+    .passosTextoContainer {
+      padding-right: 15px;
+      h6 {
+        text-align: center;
+      }
     }
   }
-}
 }
 </style>

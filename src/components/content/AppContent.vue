@@ -29,8 +29,6 @@ export default {
 
 <style scoped>
 #AppContentContainer {
-  width: 100%;
-  height: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto;
