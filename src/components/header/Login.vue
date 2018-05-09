@@ -58,5 +58,9 @@ button {
     align-items: center;
     padding: 0;
   }
+  span{
+    padding:0;
+    text-align: center;
+  }
 }
 </style>

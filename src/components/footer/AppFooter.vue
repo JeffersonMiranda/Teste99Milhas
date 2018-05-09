@@ -91,6 +91,8 @@ export default {};
 }
 
 ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -112,10 +114,9 @@ ul li a {
 */
 
 #PagamentosContainer ul {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   width: 250px;
 }
 
@@ -126,11 +127,6 @@ ul li a {
 #PagamentosContainer ul li img {
   margin: 0;
   padding: 0;
-}
-
-#CertificadosContainer ul {
-  padding: 0;
-  margin: 0;
 }
 
 #CertificadosContainer ul li {
@@ -148,7 +144,11 @@ ul li a {
     padding: 0 90px;
     text-align: center;
   }
-  
+
+  #FooterBoxes > div{
+    margin:5px 0;
+  }
+
   #LogoBox hr {
     width: 50%;
     padding: 0;
@@ -159,10 +159,9 @@ ul li a {
   #LogoBox hr:nth-child(1) {
     width: 50%;
   }
-  
-  ul li{
+
+  #PagamentosContainer ul {
     justify-content: center;
-    align-items: center;
   }
 }
 </style>
