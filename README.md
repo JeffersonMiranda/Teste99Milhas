@@ -1,10 +1,10 @@
 # teste
 
-> A Vue.js project
+> A responsive Vue.js application using CSS Grid and CSS Flexbox. Totally architected with Vue.js Components.
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
